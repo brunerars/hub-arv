@@ -6,10 +6,13 @@ services:
       context: .
       dockerfile: Dockerfile
     image: hub-arv:latest
+
     networks:
       - network_public
+
     volumes:
       - hub_data:/app/data
+
     deploy:
       mode: replicated
       replicas: 1
