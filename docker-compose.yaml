@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  hub_arv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hub-arv:latest
+    networks:
+      - network_public
+    volumes:
+      - hub_data:/app/data
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.hub_arv.rule=Host(`dashboard.arvsystems.cloud`)
+        - traefik.http.routers.hub_arv.entrypoints=websecure
+        - traefik.http.routers.hub_arv.tls.certresolver=letsencryptresolver
+        - traefik.http.services.hub_arv.loadbalancer.server.port=8501
+        - traefik.http.routers.hub_arv.service=hub_arv
+
+volumes:
+  hub_data:
+    external: true
+
+networks:
+  network_public:
+    external: true
