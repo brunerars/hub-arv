@@ -69,39 +69,42 @@ st.sidebar.header("🔍 Filtros")
 # Mapeamento de pessoas por equipe
 EQUIPES_PESSOAS = {
     "Manufatura": [
-        "Eduardo Ruiz Sacchetto",
-        "Alvair de Nascimento Andrade",
-        "Thiago Augusto Vanzellotti Jr.",
-        "Sergio da Silva Bianco",
-        "André Jesus Hugo de Melo",
-        "Felipe Jose do Amaral",
+        "Eduardo Ruiz Barrichielo",
+        "Almir",
+        "Thiago Verzinhace",
+        "Sergio da Silva Branco",
+        "Andre Magni",
+        "Felipe Amaral",
         "Rodrigo Camargo Vieira",
         "Gustavo Umebayashi sasagima",
+        "Alisson sabino"
     ],
     "Engenharia Mecânica": [
-        "Henrique Kimoto",
-        "Heloisa Dias Nunes Junior",
-        "Cristhian Patrick",
-        "Vinicius Bispo",
-        "Lucas Eduardo Manfuvert Souza",
-        "Gustavo Limaduqui Sciagglia",
-        "Guilherme Marques da Silva",
+        "Henrique Komoto",
+        "Pedro Julio Marques da Silva",
+        "Lucas Mantovani",
+        "Dario Pereira",
         "Vinicius Correia",
+        "Mauricio Machado",
     ],
     "Engenharia Elétrica": [
-        "Lucas Emmanuel Modenese",
+        "Jean Ribeiro",
         "Ruan Gonçalves de Jesus",
-        "Matheus Lopes",
+        "Jonatas Silva",
         "Gabriel Marcondes de Siqueira",
-        "Fabricio Lima de Carvalho",
-        "Lucas Oliveira da Silva",
-        "Catiele de Carvalho",
+        "Fabricio Carvalho",
+        "Lucas Nascimento",
         "Saulo",
     ],
     "Compras": [
         "Viviane Domingues",
         "Cintia Olívia",
-        "Kaique Gabriel",
+        "Kaique Gabriel"
+    ],
+    "Terceiros": [
+        "Terceiros Engenharia Elétrica",
+        "Terceiros Programação",
+        "Terceiros Instalação Mecânica",
     ]
 }
 
